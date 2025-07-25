@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Password Validator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>🔐 Password Validator</h2>
+
+    <div class="input-group">
+      <input type="password" id="password" placeholder="Enter your password" />
+      <span class="toggle-password" onclick="togglePassword()">👁️</span>
+    </div>
+
+    <div class="strength" id="strengthIndicator">Strength: </div>
+
+    <button onclick="generatePassword()">Generate Strong Password</button>
+
+    <div class="generated" id="generatedContainer" style="display:none;">
+      <span id="generatedPassword"></span>
+      <button class="copy-btn" onclick="copyPassword()">Copy</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
